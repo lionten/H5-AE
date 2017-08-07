@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>这个小AE我也是服了！</title>
+	<meta name='viewport' content='width=device-width,initial-scale=1,user-scalable=no'>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class='box'>
+	<!-- 加载页 -->
+	<div class='loading'>
+		<div class='load_per'><img src="img/eye.png" class='load_eye'></div>
+		<img src="img/btn.png" class="btn">
+		<div></div>
+	</div>
+	<!-- 主页 -->
+	<div class='main'>
+		<audio src="img/01-2_1.mp3"></audio>
+		<div class='pageOne'>
+			<div class='one_per'></div>
+			<img src="img/bq_01.png" class="sweat">
+			<div class='txt1'></div>
+			<div class='txt2'></div>
+			<div class='txt3'></div>
+			<div class='txt4'></div>
+			<div class='txt5'></div>
+			<div class='txt6'></div>
+			<div class='boss'></div>
+		</div>
+		<div class='pageTwo'>
+			<img src="img/wtf.png" class="wtf">
+		</div>
+		<div class='pageThree'>
+			<div class='two_per'></div>
+			<img src="img/t4_01.png" class="txt3_1">
+			<img src="img/t4_02.png" class="txt3_2">
+			<img src="img/t4_03.png" class="txt3_3">
+			<img src="img/t4_04.png" class="txt3_4">
+			<div class="tear"></div>
+			<div class="tear1"></div>
+			<img src="img/bq_13.png" class="mou_1">
+		</div>
+		<div class='pageFour'>
+			<div class='three_per'></div>
+			<div class='leg'></div>
+			<img src="img/t5.png" class="txt4_1">
+			<img src="img/m1.png" class="m1">
+		</div>
+		<div class='pageFive'>
+			<div class='three_per'></div>
+			<div class="tear2"></div>
+			<div class="tear3"></div>
+			<img src="img/bq_13.png" class="mou_2">
+			<div class='txt5_1'></div>
+			<div class='txt5_2'></div>
+			<div class='txt5_3'></div>
+			<div class='txt5_4'></div>
+		</div>
+		<div class='pageSix'>
+			<div class='six_per'></div>
+			<img src="img/t7.png" class="txt6_1">
+		</div>
+		<div class='pageSeven'>
+			<div class='sev_per'></div>
+			<div class='txt7_1'></div>
+			<div class='txt7_2'></div>
+			<div class='txt7_3'></div>
+			<div class='txt7_4'></div>
+		</div>
+		<div class='pageEig'>
+			<div class='eig_dog'></div>
+			<div class='txt8_1'></div>
+			<div class='txt8_2'></div>
+			<div class='txt8_3'></div>
+		</div>
+		<div class='pageNine'>
+			<div class='hand'></div>
+			<img src="img/cloud.png" class="cloud_1">
+			<img src="img/cloud.png" class="cloud_2">
+			<img src="img/cloud.png" class="cloud_3">
+			<div class='txt9_1'></div>
+			<div class='txt9_2'></div>
+			<div class='txt9_3'></div>
+			<div class='txt9_4'></div>
+			<div class='txt9_5'></div>
+		</div>
+		<div class='pageTen'>
+			<div class='build'></div>
+			<div class='txt10_1'></div>
+			<img src="img/wtdp.png" class="screen">
+			<div class='txt10_2'></div>
+			<div class='txt10_3'></div>
+			<div class='txt10_4'></div>
+			<div class='txt10_5'></div>
+			<div class='txt10_6'></div>
+			<img src="img/11t2.png" class="money">
+			<img src="img/11t3.png" class="face">
+			<img src="img/11t1.png" class="love">	
+		</div>
+		<div class='pageEle'>
+			<div class='ele_per'></div>
+			<img src="img/m1.png" class="mou_3">
+			<img src="img/t12_03.png" class='txt11_1' >
+			<img src="img/t12_05.png" class='txt11_2' >
+			<img src="img/t12_08.png" class='txt11_3' >
+			<img src="img/t12_12.png" class='txt11_4' >
+		</div>
+		<div class='pageTwe'>
+			<img src="img/t13t.png" class="title">
+			<img src="img/t13b.png" class="info">
+			<img src="img/invitebtn.png" class="invite">
+		</div>
+		<div class='pageThir'>
+			<img src="img/h5.jpg" class="h5">
+		</div>
+	</div>
+</div>
+<script src='js/jquery-3.2.1.js'></script>
+<script>
+	var h =$(document).height();
+	$('.box').css('height',h)
+	$('.btn').click(function(){
+		$('.main').show()
+		$('loading').hide()
+		$('.pageOne').show()
+		$('audio')[0].play()
+	})
+	// 第一页效果
+	if($('.pageOne').show()){
+		setTimeout(function(){
+			$('.txt1').hide();
+			$('.txt2').hide();
+			$('.txt3').hide();
+			$('.txt4').hide();	
+		}, 3400)
+	}
+	// 第二页效果
+	setTimeout(function(){
+		$('.pageOne').hide()
+		$('.pageTwo').show();
+	},7000)
+	//第三页效果
+	setTimeout(function(){
+		$('.pageTwo').hide()
+		$('.pageThree').show();
+	},8200)
+	//第四页效果
+	setTimeout(function(){
+		$('.pageThree').hide()
+		$('.pageFour').show();
+	},15500)
+	//第五页效果
+	setTimeout(function(){
+		$('.pageFour').hide()
+		$('.pageFive').show();
+	}, 17500)
+	//第六页效果
+	setTimeout(function(){
+		$('.pageFive').hide()
+		$('.pageSix').show();
+	}, 23600)
+	//第七页效果
+	setTimeout(function(){
+		$('.pageSix').hide()
+		$('.pageSeven').show();
+	}, 25500)
+	//第八页效果
+	setTimeout(function(){
+		$('.pageSeven').hide()
+		$('.pageEig').show();
+	}, 28200)
+	//第九页效果
+	setTimeout(function(){
+		$('.pageEig').hide()
+		$('.pageNine').show();
+	}, 34300)
+	//第十页效果
+	setTimeout(function(){
+		$('.pageNine').hide()
+		$('.pageTen').show();
+	}, 39500)
+	//第十一页效果
+	setTimeout(function(){
+		$('.pageTen').hide()
+		$('.pageEle').show();
+	}, 50600)
+	//第十二页效果
+	setTimeout(function(){
+		$('.pageEle').hide()
+		$('.pageTwe').show();
+	}, 61200)
+	$('.invite').click(function(){
+		$('.pageTwe').hide();
+		$('.pageThir').show()
+	})
+	var bol = true
+	setInterval(function(){
+		if(bol){
+			$('.tear1').show()
+			$('.tear').hide()
+			bol = false
+		}else{
+			$('.tear1').hide()
+			$('.tear').show()
+			bol = true
+		}
+	},400)
+	var bol2 = true
+	setInterval(function(){
+		if(bol2){
+			$('.tear3').show()
+			$('.tear2').hide()
+			bol2 = false
+		}else{
+			$('.tear3').hide()
+			$('.tear2').show()
+			bol2 = true
+		}
+	},400)
+	var num = 0
+	$('.face').hide()
+	$('.love').hide()
+	setInterval(function(){
+		if(num == 0){
+			$('.money').show()
+			$('.face').hide()
+			$('.love').hide()
+			num = 1
+		}else if(num==1){
+			$('.face').show()
+			$('.money').hide()
+			$('.love').hide()
+			num=2
+		}else if(num==2){
+			$('.love').show()
+			$('.money').hide()
+			$('.face').hide()
+			num=0
+		}
+	},800)
+
+</script>
+</body>
+</html>
